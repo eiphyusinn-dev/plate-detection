@@ -1,0 +1,17 @@
+paddleocr==2.8.1
+paddlepaddle==2.6.1
+opencv_python
+loguru
+tqdm
+torch==2.4.0
+torchvision==0.19.0
+thop
+ninja
+tabulate
+psutil
+tensorboard
+numpy
+pycocotools>=2.0.2
+onnx>=1.13.0
+onnx-simplifier==0.4.10
+pytest
