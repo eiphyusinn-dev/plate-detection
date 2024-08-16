@@ -40,7 +40,7 @@ jobs:
     # Run tests
     - name: Run tests
       run: |
-        pytest scripts/test_pipeline.py  # Adjust path to your test script
+        pytest testing_pipeline/test_pipeline.py  # Adjust path to your test script
 
     # Format check (optional, if needed)
     - name: Format check
