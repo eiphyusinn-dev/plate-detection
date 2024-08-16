@@ -1,22 +1,17 @@
-# Start from a CUDA base image
-FROM nvidia/cuda:11.7.1-devel-ubuntu20.04
-ARG DEBIAN_FRONTEND=noninteractive
+# Use an official Python runtime as a parent image
+FROM python:3.8-slim
 
-# Set app as working dir in the container
+# Set the working directory in the container
 WORKDIR /app
 
-# Copy application files from app dir into the container
-COPY ./ /app
+# Copy the requirements file into the container
+COPY requirements.txt .
 
-# Install essentials
-RUN apt-get update -y
+# Install any needed packages specified in requirements.txt
+RUN pip install --upgrade pip && pip install -r requirements.txt
 
-# Install python
-RUN apt-get install python3.10 -y
-RUN apt -y install python3-pip
+# Copy the rest of the code into the container
+COPY . .
 
-# Update the package lists and install required libraries
-RUN apt-get update 
-RUN pip install -r requirements.txt
-
-
+# Set the command to run your tests or application
+CMD ["test_pipeline", "scripts/test_pipeline.py"]
