@@ -14,4 +14,4 @@ RUN pip install --upgrade pip && pip install -r requirements.txt
 COPY . .
 
 # Set the command to run your tests or application
-CMD ["test_pipeline"]
+CMD ["pytest"]
