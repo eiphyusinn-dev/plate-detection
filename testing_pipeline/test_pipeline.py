@@ -1,5 +1,5 @@
 import os
-from scripts.paddle_ocr import predict_and_visualize, recognize_text_in_bboxes, custom_classes,img_path,exp_file
+from testing_pipeline.paddle_ocr import predict_and_visualize, recognize_text_in_bboxes, custom_classes,img_path,exp_file
 from paddleocr import PaddleOCR
 import gdown
 
