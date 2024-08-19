@@ -31,14 +31,16 @@ This project uses Docker and GitHub Actions to automate the CI/CD pipeline. The 
 
 ### Steps
 #### Clone the Repository:
-
-''' 
-git clone https://github.com/your-username/license-plate-detection.git
-cd license-plate-detection ''' 
+```git clone https://github.com/your-username/license-plate-detection.git```
+```cd license-plate-detection```
 
 #### Install Dependencies:
 
-''' pip install -r requirements.txt '''
+``` pip install -r requirements.txt ```
 
 #### Set Up Docker:
-docker build -t license-plate-detection .
+``` docker build -t license-plate-detection .```
+
+
+### This file includes the complete project overview, Docker and CI/CD setup, and instructions for installation and running the project.### 
+
