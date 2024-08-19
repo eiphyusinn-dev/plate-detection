@@ -29,3 +29,16 @@ This project uses Docker and GitHub Actions to automate the CI/CD pipeline. The 
 - **Dockerfile**: Defines the environment for the project.
 - **GitHub Actions Workflow**: Triggers the CI/CD pipeline on each commit to the repository.
 
+### Steps
+#### Clone the Repository:
+
+''' 
+git clone https://github.com/your-username/license-plate-detection.git
+cd license-plate-detection ''' 
+
+#### Install Dependencies:
+
+''' pip install -r requirements.txt '''
+
+#### Set Up Docker:
+docker build -t license-plate-detection .
