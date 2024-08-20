@@ -15,7 +15,7 @@ jobs:
       run: docker build -t my-app .
 
     - name: Run tests
-      run: docker run --rm my-app
+      run: docker run --gpus all -it --rm my-app
 
     - name: Format check
       run: docker run --rm my-app bash -c "./.github/workflows/format_check.sh"
