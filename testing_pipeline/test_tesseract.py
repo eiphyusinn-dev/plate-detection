@@ -34,7 +34,7 @@ def test_ocr_text():
         # Assert that the detected text is "eps"
         assert detected_text == "PGeMN112", f"Detected text was '{detected_text}' instead of 'PGeMN112'"
     else:
-        assert False, "No objects detected."
+        assert False, "No object is detected."
 
         os.remove(weight_path)
         assertFalse(os.path.exists(weight_path))
